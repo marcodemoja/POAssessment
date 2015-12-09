@@ -1,7 +1,7 @@
 # Poassessment
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Simple Excercise using WatchPeopleCode API resources :
+* https://github.com/WatchPeopleCode/WatchPeopleCode
 
 ## Prerequisites
 
