@@ -20,5 +20,9 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  return app.toTree();
+    app.import('bower_components/bootstrap-sass/assets/javascripts/bootstrap.js');
+    app.import('bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff', {
+        destDir: 'assets/fonts/bootstrap/'
+    });
+    return app.toTree();
 };
