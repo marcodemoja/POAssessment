@@ -6,10 +6,9 @@
                     <h3 class="panel-title">Live streams</h3>
                 </div>
                 <div class="panel-body">
-                   {{#each lives as |live|}}
-                       {{live.title}}
+                   {{#each model.live as |l|}}
+                       {{l.title}} - {{l.url}}<br />
                      {{/each}}
-
                 </div>
             </div>
         </div>
