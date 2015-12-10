@@ -6,3 +6,5 @@ export default DS.Model.extend({
     youtube: DS.attr(),
 
 });
+
+

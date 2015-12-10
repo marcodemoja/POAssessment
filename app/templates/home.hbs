@@ -1,10 +1,27 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            Live streams
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Live streams</h3>
+                </div>
+                <div class="panel-body">
+                   {{#each lives as |live|}}
+                       {{live.title}}
+                     {{/each}}
+
+                </div>
+            </div>
         </div>
         <div class="col-md-6">
-            Upcoming streams
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Upcoming streams</h3>
+                </div>
+                <div class="panel-body">
+                    Panel content
+                </div>
+            </div>
         </div>
     </div>
 </div>
