@@ -1,4 +1,4 @@
-# Poassessment
+# POAssessment
 
 Simple Excercise using WatchPeopleCode API resources :
 * https://github.com/WatchPeopleCode/WatchPeopleCode
