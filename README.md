@@ -1,4 +1,4 @@
-# POAssessment
+# Watch People Code Web API example app
 
 Simple Excercise using WatchPeopleCode API resources :
 * https://github.com/WatchPeopleCode/WatchPeopleCode
