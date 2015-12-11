@@ -1,2 +1,18 @@
-<h2>Streamer page</h2>
+<div class="col-md-8">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Streamer details</h3>
+        </div>
+        <div class="panel-body">
+            <dl class="dl-horizontal">
+                <dt class="text-left">name</dt>
+                <dd>{{model.data.name}}</dd>
+                <dt>twitch</dt>
+                <dd>{{model.data.twitch}}</dd>
+                <dt>youtube</dt>
+                <dd>{{model.data.youtube}}</dd>
+            </dl>
+        </div>
+    </div>
+</div>
 {{outlet}}

@@ -25,7 +25,8 @@ module.exports = function(environment) {
       'img-src': "'self'",
       'report-uri':"'localhost'",
       'style-src': "'self' 'unsafe-inline'",
-      'frame-src': "'none'"
+      'frame-src': "'none'",
+      'media-src': "www.twitch.tv"
     }
   };
 

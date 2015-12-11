@@ -1,27 +1,42 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
+<div class="col-md-6">
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">Live streams</h3>
                 </div>
                 <div class="panel-body">
                    {{#each model.live as |l|}}
-                       {{l.title}} - {{l.url}}<br />
-                     {{/each}}
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Upcoming streams</h3>
-                </div>
-                <div class="panel-body">
-                    Panel content
-                </div>
-            </div>
-        </div>
-    </div>
+                       <p>{{l.title}}</p>
+                        #videoPlayer
+                     {{!-- COMMENT VIDEO PLAYER HELPER NO VIDEO URL AVAILABLE FROM API
+                         <div class=" embed-responsive embed-responsive-16by9">
+                          {{video-player l.url l.id}}
+                          </div>--}}
+                      {{#if l.user}}
+                          <footer>By <cite title="user"><a href="/streamers/{{l.user}}">{{l.user}}</a></cite></footer>
+                      {{/if}}
+                    {{else}}
+                       <p class="lead">- No live streams -</p>
+                   {{/each}}
+         </div>
+     </div>
+ </div>
+ <div class="col-md-6">
+     <div class="panel panel-primary">
+         <div class="panel-heading">
+             <h3 class="panel-title">Upcoming streams</h3>
+         </div>
+         <div class="panel-body">
+           {{#each model.upcoming as |u|}}
+             <p>{{u.title}}</p>
+             {{#if u.user}}- By <a href="/streamers/{{u.user}}">{{u.user}}</a>{{/if}}
+           {{else}}
+             <p class="lead">- No upcoming streams -</p>
+           {{/each}}
+         </div>
+     </div>
+ </div>
+<div class="col-md-8">
+<!--STATIC LINK TO STREAMER PAGE -that's because user property in -->
+<p>Go to <cite title="user"><a href="/streamers/glitterofhyad">glitterofhyad</a></cite> streamer page profile</p>
 </div>
 {{outlet}}
